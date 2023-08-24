@@ -13,6 +13,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
   styleUrls: ['./sign-in.component.css']
 })
 export class SignInComponent implements OnInit {
+  title: string = "Enhanced Secure Profile App"
 
   constructor(private router: Router) {
   }

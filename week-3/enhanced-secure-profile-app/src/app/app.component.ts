@@ -12,7 +12,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = "Enhanced Secure Profile App’"
   constructor() {
     //sets the local storage Item for isLoggedIn to false
     localStorage.setItem("isLoggedIn", "false")
