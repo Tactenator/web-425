@@ -1,3 +1,9 @@
+/**
+ * Name: Trevor McLaurine
+ * Date: 8/24/2023
+ * Title: home.component.ts
+ * Description: Home component
+ */
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 

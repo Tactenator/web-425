@@ -1,3 +1,9 @@
+/**
+ * Name: Trevor McLaurine
+ * Date: 8/24/2023
+ * Title: app.module.ts
+ * Description: Modules file
+ */
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
