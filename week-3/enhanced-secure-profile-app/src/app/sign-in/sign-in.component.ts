@@ -8,8 +8,6 @@ import { Router,ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class SignInComponent implements OnInit {
 
-  isLoggedIn = false;
-
   constructor(private router: Router) {
   }
 
@@ -17,9 +15,11 @@ export class SignInComponent implements OnInit {
     
   }
 
-  signIn() {
-    this.isLoggedIn = true;
+  signIn(username: string, password: string) {
+    if(username && password){
+      localStorage.setItem("isLoggedIn", "true")
+    }
 
-    this.router.navigate(['/home'], {queryParams: {isLoggedIn: this.isLoggedIn}, skipLocationChange: true})
+    this.router.navigate(['/home'],)
   }
 }

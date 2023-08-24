@@ -19,6 +19,12 @@ class SignInGuard {
 }
 
 export const isSignInGuard: CanActivateFn = (route: ActivatedRouteSnapshot, state: RouterStateSnapshot):boolean => {
+  let _router = inject(Router)
+  let isLoggedIn = localStorage.getItem('isLoggedIn')
+  if(!isLoggedIn) {
+    _router.navigate([''])
+    return false;
+  }
   
   return inject(SignInGuard).canActivate(route, state)
 };
