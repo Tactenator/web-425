@@ -1,3 +1,10 @@
+/**
+ * Name: Trevor McLaurine
+ * Date: 8/22/2023
+ * Assignment: Exercise 4.2 - Inversion of Control and Dependency Injection
+ * Description: App Routing Module
+**/
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ComposerListComponent } from './composer-list/composer-list.component';

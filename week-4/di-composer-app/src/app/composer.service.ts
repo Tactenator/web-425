@@ -1,3 +1,10 @@
+/**
+ * Name: Trevor McLaurine
+ * Date: 8/22/2023
+ * Assignment: Exercise 4.2 - Inversion of Control and Dependency Injection
+ * Description: Services provider for Composers.
+**/
+
 import { Injectable } from '@angular/core';
 import { IComposer } from './composer-interface';
 
