@@ -1,3 +1,9 @@
+/**
+ * Name: Trevor McLaurine
+ * Date: 8/22/2023
+ * Assignment: Exercise 4.4 - Async Pipe
+ * Description: Composer List Component
+**/
 import { Component } from '@angular/core';
 import { IComposer } from '../composer-interface';
 import { ComposerService } from '../composer.service';
