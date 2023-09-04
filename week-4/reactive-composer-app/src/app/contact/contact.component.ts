@@ -1,7 +1,7 @@
 /**
  * Name: Trevor McLaurine
  * Date: 8/22/2023
- * Assignment: Exercise 4.4 - Async Pipe
+ * Assignment: Assignment: Exercise 4.3 - Handling Form Events with Observables
  * Description: Contact Component.
 **/
 import { Component } from '@angular/core';
