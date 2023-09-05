@@ -1,15 +1,15 @@
+/**
+ * Name: Trevor McLaurine
+ * Date: 9/4/2023
+ * Assignment: Exercise 5.3 - Data Tables
+ * Description: App Module
+**/
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-/**
- * Name: Trevor McLaurine
- * Date: 9/4/2023
- * Assignment: Exercise 5.2 - Navigation and Layout
- * Description: App Module
-**/
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';

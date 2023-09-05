@@ -1,3 +1,10 @@
+/**
+ * Name: Trevor McLaurine
+ * Date: 9/4/2023
+ * Assignment: Exercise 5.3 - Data Tables
+ * Description: Book Service
+**/
+
 import { Injectable } from '@angular/core';
 import { IBook } from './book.interface'
 import { Observable, of, map } from 'rxjs';
