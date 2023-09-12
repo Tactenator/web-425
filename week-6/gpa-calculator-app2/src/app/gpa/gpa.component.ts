@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-gpa',
@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class GpaComponent {
 
+  @Input() gpaTotal: number;
 }
