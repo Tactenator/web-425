@@ -1,3 +1,10 @@
+/**
+ * Name: Trevor McLaurine
+ * Date: 9/11/2023
+ * Assignment: Assignment 6.4 - Input Properties
+ * Description: Base layout component
+**/
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,8 +14,8 @@ import { Component } from '@angular/core';
 })
 export class BaseLayoutComponent {
 
-  assignment: string = ""; 
-  
+  assignment: string = "";
+
   constructor() {
     this.assignment = 'Exercise 6.4 - Input Properties'
   }

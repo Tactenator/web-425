@@ -1,3 +1,10 @@
+/**
+ * Name: Trevor McLaurine
+ * Date: 9/11/2023
+ * Assignment: Exercise 6.2 - Input/Output Properties, Part 1
+ * Description: Wishlist create component
+**/
+
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { IWishlistitem } from '../wishlist-item.interface';
 
@@ -7,8 +14,8 @@ import { IWishlistitem } from '../wishlist-item.interface';
   styleUrls: ['./wishlist-create.component.css']
 })
 export class WishlistCreateComponent {
-  
-  @Output() addItemEmitter = new EventEmitter<IWishlistitem>(); 
+
+  @Output() addItemEmitter = new EventEmitter<IWishlistitem>();
 
   item: IWishlistitem
 
@@ -17,6 +24,6 @@ export class WishlistCreateComponent {
   }
 
   addItem(){
-    this.addItemEmitter.emit({ title: this.item.title, authors: this.item.authors }) 
+    this.addItemEmitter.emit({ title: this.item.title, authors: this.item.authors })
   }
 }

@@ -1,7 +1,7 @@
 /**
  * Name: Trevor McLaurine
- * Date: 9/6/2023
- * Assignment: Exercise 5.4 - Data Tables
+ * Date: 9/11/2023
+ * Assignment: Exercise 6.2 - Input/Output Properties, Part 1
  * Description: Routing for In-N-Out books
 **/
 
@@ -24,7 +24,7 @@ const routes: Routes = [
   },
   {
     path: 'book-list', component: BookListComponent
-  }, 
+  },
   {
     path: 'wishlist', component: WishlistComponent
   }

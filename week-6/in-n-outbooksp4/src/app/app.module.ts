@@ -1,7 +1,7 @@
 /**
  * Name: Trevor McLaurine
- * Date: 9/6/2023
- * Assignment: Exercise 5.4 - Data Tables
+ * Date: 9/11/2023
+ * Assignment: Exercise 6.2 - Input/Output Properties, Part 1
  * Description: App Module
 **/
 
@@ -50,9 +50,9 @@ import { MatInput, MatInputModule } from '@angular/material/input'
     FlexLayoutModule,
     MatIconModule,
     MatTableModule,
-    MatDialogModule, 
-    FormsModule, 
-    MatFormFieldModule, 
+    MatDialogModule,
+    FormsModule,
+    MatFormFieldModule,
     MatInputModule
   ],
   providers: [],

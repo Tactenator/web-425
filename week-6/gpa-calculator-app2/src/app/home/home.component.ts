@@ -1,3 +1,10 @@
+/**
+ * Name: Trevor McLaurine
+ * Date: 9/11/2023
+ * Assignment: Assignment 6.4 - Input Properties
+ * Description: Home component
+**/
+
 import { Component } from '@angular/core';
 import { ITranscript } from '../transcript.interface';
 

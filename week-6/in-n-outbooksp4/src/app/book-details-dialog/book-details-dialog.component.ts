@@ -1,8 +1,8 @@
 /**
  * Name: Trevor McLaurine
- * Date: 9/6/2023
- * Assignment: Exercise 5.4 - Data Tables
- * Description: Book Details Dialog Component
+ * Date: 9/11/2023
+ * Assignment: Exercise 6.2 - Input/Output Properties, Part 1
+ * Description: Book details
 **/
 
 import { Component } from '@angular/core';
@@ -17,7 +17,7 @@ import { IBook } from '../book.interface';
 })
 export class BookDetailsDialogComponent {
 
-  book: IBook; 
+  book: IBook;
   constructor(private dialogRef: MatDialogRef<BookDetailsDialogComponent>, @Inject(MAT_DIALOG_DATA) data) {
     this.book = data.book;
   }

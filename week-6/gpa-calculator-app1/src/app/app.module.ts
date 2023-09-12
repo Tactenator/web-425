@@ -1,3 +1,10 @@
+/**
+ * Name: Trevor McLaurine
+ * Date: 9/11/2023
+ * Assignment: Exercise 6.3 - Layouts
+ * Description: App module
+**/
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -11,7 +18,7 @@ import { HomeComponent } from './home/home.component';
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card'
-import { MatButtonModule } from '@angular/material/button'; 
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [

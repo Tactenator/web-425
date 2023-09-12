@@ -1,7 +1,7 @@
 /**
  * Name: Trevor McLaurine
  * Date: 9/6/2023
- * Assignment: Exercise 5.4 - Data Tables
+ * Assignment: Exercise 6.2 - Input/Output Properties, Part 1
  * Description: Book Service
 **/
 

@@ -1,3 +1,10 @@
+/**
+ * Name: Trevor McLaurine
+ * Date: 9/11/2023
+ * Assignment: Assignment 6.4 - Input Properties
+ * Description: Grade summary component
+**/
+
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -9,5 +16,5 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class GradeSummaryComponent {
   @Input() grade: string;
-  @Input() course: string; 
+  @Input() course: string;
 }

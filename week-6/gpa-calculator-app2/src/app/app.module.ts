@@ -1,3 +1,10 @@
+/**
+ * Name: Trevor McLaurine
+ * Date: 9/11/2023
+ * Assignment: Assignment 6.4 - Input Properties
+ * Description: App Module
+**/
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,11 +19,11 @@ import { MatToolbarModule } from '@angular/material/toolbar'
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card'
 import { MatButtonModule } from '@angular/material/button';
-import { GpaComponent } from './gpa/gpa.component'; 
+import { GpaComponent } from './gpa/gpa.component';
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input'
 import { MatListModule } from '@angular/material/list'
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { GradeSummaryComponent } from './grade-summary/grade-summary.component'
 
