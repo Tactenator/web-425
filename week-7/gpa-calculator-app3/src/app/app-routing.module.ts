@@ -1,18 +1,11 @@
-/**
- * Name: Trevor McLaurine
- * Date: 9/11/2023
- * Assignment: Assignment 6.4 - Input Properties
- * Description: App routing module
-**/
-
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { BaseLayoutComponent } from './base-layout/base-layout.component';
 import { HomeComponent } from './home/home.component';
 import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SignInComponent } from './sign-in/sign-in.component';
-import { isSignInGuard } from './sign-in.guard'
+import { SignInGuard } from './sign-in.guard';
 
 const routes: Routes = [
   {
@@ -24,14 +17,15 @@ const routes: Routes = [
         component: HomeComponent
       }
     ],
-    canActivate: [isSignInGuard]
+    canActivate: [SignInGuard]
   },
   {
     path: 'session',
     component: AuthLayoutComponent,
-    children: [{
-      path: 'not-found',
-      component: NotFoundComponent
+    children: [
+      {
+        path: 'not-found',
+        component: NotFoundComponent
       },
       {
         path: 'sign-in',
@@ -41,13 +35,12 @@ const routes: Routes = [
   },
   {
     path: '**',
-    component: NotFoundComponent
+    redirectTo: 'session/not-found'
   }
-]
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-
 export class AppRoutingModule { }
