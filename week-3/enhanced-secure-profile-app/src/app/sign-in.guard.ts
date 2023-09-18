@@ -14,16 +14,16 @@ import { CanActivateFn } from '@angular/router';
   providedIn: 'root'
 })
 
-//constructos the SignInGuard class, creates the private router and creates the canactivate function
+//constructs the SignInGuard class, creates the private router and creates the canactivate function
 class SignInGuard {
   constructor(private router: Router) {}
-  
-  isLoggedIn: boolean; 
+
+  isLoggedIn: boolean;
 
   canActivate(
-    route: ActivatedRouteSnapshot, 
+    route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): boolean {
-      return true; 
+      return true;
     }
 }
 
@@ -38,7 +38,7 @@ export const isSignInGuard: CanActivateFn = (route: ActivatedRouteSnapshot, stat
     _router.navigate([''])
     return false;
   }
-  
+
   return inject(SignInGuard).canActivate(route, state)
 };
 
