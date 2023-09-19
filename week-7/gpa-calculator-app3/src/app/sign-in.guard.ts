@@ -1,35 +1,23 @@
-import { ActivatedRoute, CanActivateFn } from '@angular/router';
-import { Router } from '@angular/router';
+import { Injectable } from '@angular/core';
+import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
-import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
-import { Inject, Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
+export class isSignInGuard implements CanActivate {
 
-export class SignInGuard {
-  constructor(private router: Router, private route: ActivatedRoute, private cookieService: CookieService) {}
+  constructor(private router: Router, private cookieService: CookieService) {}
 
-  canActivate(
-    route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): boolean {
+  canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
+    const sessionUser = this.cookieService.get('session_user');
+
+    if (sessionUser) {
       return true;
+    } else {
+      this.router.navigate(['/session/sign-in']);
+      return false;
     }
+  }
 }
-
-
-export const isSignInGuard: CanActivateFn = (route: ActivatedRouteSnapshot, state: RouterStateSnapshot):boolean => {
-  const _router = Inject(Router)
-  const _cookieService = Inject(CookieService)
-  const sessionUser = _cookieService['session-user']
-  if(sessionUser){
-    return Inject(SignInGuard).canActivate(route, state)
-  }
-  else {
-    _router.navigate['/session/sign-in']
-    return false;
-  }
-
-  // return Inject(SignInGuard).canActivate(route, state)
-};

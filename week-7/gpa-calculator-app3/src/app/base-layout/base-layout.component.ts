@@ -24,6 +24,6 @@ export class BaseLayoutComponent {
 
   signOut() {
     this.cookieService.deleteAll()
-    this.router.navigate(['/'])
+    this.router.navigate(['/session/sign-in'])
   }
 }
